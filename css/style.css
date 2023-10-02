@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Chango', cursive;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 90px;
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gauche, #droite {
+    display:flex;
+    flex-direction: column;
+}
+
+#image-gauche, #image-droite {
+    background-image: url('../images/depart.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius:20px;
+}
+
+#resultat-gauche, #resultat-droite {
+    text-align:center;
+    font-size:70px;
+    color:white;
+    text-transform: capitalize;
+}
+
+.bouton {
+    color: black;
+    background-color: white;
+    font-size:30px;
+    border:none;
+    padding:10px 30px;
+    font-family: 'Chango', cursive;
+    border-radius:10px;
+}
